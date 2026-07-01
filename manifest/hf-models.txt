@@ -1,0 +1,10 @@
+# AIR26 Hugging Face models (project 07, SmolVLA) — captured into $AIR26_CACHE/hf
+#
+# PREFERRED capture method (download.sh default): load the policy once inside the venv with
+#   HF_HOME=$AIR26_CACHE/hf  — this auto-pulls the policy AND its VLM backbone, so we don't
+#   hard-code the backbone repo id (it can change with the lerobot version).
+#
+# FALLBACK direct download (used only if no venv is available on staging):
+#   huggingface-cli download <repo> --local-dir-use-symlinks False
+# The policy below is enough to *start*; the backbone is fetched on first online load.
+lerobot/smolvla_base

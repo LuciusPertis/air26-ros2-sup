@@ -1,0 +1,38 @@
+# AIR26 apt top-level packages — Ubuntu 22.04 / ROS 2 Humble (amd64)
+# download.sh resolves ALL transitive deps from these and builds a local repo.
+# Lines starting with # and blank lines are ignored.
+
+# --- Webots <-> ROS bridge (projects 03, 05). Pairs with webots_2025a_amd64.deb ---
+ros-humble-webots-ros2
+
+# --- Gazebo Fortress / ros_gz (projects 02, 05, 07-archived) -- the doc-gap dep ---
+ros-humble-ros-gz
+
+# --- MoveIt 2 (project 04) ---
+ros-humble-moveit
+ros-humble-moveit-setup-assistant
+ros-humble-moveit-simple-controller-manager
+ros-humble-moveit-planners-ompl
+ros-humble-moveit-ros-move-group
+ros-humble-moveit-configs-utils
+ros-humble-moveit-kinematics
+ros-humble-moveit-ros-visualization
+
+# --- Nav2 + SLAM (project 04) ---
+ros-humble-navigation2
+ros-humble-nav2-bringup
+ros-humble-slam-toolbox
+
+# --- Perception deps (project 05) ---
+ros-humble-cv-bridge
+ros-humble-vision-msgs
+ros-humble-image-transport
+ros-humble-compressed-image-transport
+
+# --- Behaviour trees (project 03) ---
+ros-humble-py-trees
+ros-humble-py-trees-ros
+ros-humble-py-trees-ros-interfaces
+
+# --- Headless GL for sim verification (all) ---
+xvfb

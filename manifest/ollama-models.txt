@@ -1,0 +1,5 @@
+# AIR26 Ollama models (project 06) — pulled into $AIR26_CACHE/ollama/models
+# download.sh runs `ollama pull` for each, with OLLAMA_MODELS pointed at the cache.
+# qwen3:1.7b is the workshop DEFAULT (lighter, CPU-friendly); qwen3:4b is the opt-in upgrade.
+qwen3:1.7b
+qwen3:4b

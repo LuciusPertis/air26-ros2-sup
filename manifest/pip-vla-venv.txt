@@ -1,0 +1,9 @@
+# AIR26 pip wheelhouse — SmolVLA venv, python 3.10 (project 07)
+# torch/torchvision come from the CPU index (no GPU in the workshop); download.sh passes
+#   --extra-index-url https://download.pytorch.org/whl/cpu
+# numpy<2 is intentional: re-pinned last so rclpy/Humble still imports.
+# Installed offline with:  pip install --no-index --find-links <dir> -r pip-vla-venv.txt
+torch
+torchvision
+lerobot[smolvla]
+numpy<2
